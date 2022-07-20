@@ -15,7 +15,7 @@ export function Button({ title, ...rest }: Props): JSX.Element {
       {...rest}
     >
       <Heading color="white" fontSize="sm">
-        {title}!
+        {title}
       </Heading>
     </NativeBaseButton>
   );
