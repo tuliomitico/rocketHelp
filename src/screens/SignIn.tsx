@@ -32,7 +32,7 @@ export function SignIn(): JSX.Element {
         secureTextEntry
         onChangeText={setPassword}
       />
-      <Button title="Receba" w="full" onPress={e => console.log(e)} />
+      <Button title="Entrar" w="full" onPress={e => console.log(e)} />
     </VStack>
   );
 }
