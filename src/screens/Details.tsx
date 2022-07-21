@@ -5,7 +5,7 @@ import firestore from '@react-native-firebase/firestore';
 
 import {
   CircleWavyCheck,
-  Clipboard,
+  ClipboardText,
   DesktopTower,
   Hourglass,
 } from 'phosphor-react-native';
@@ -121,12 +121,12 @@ export function Details(): JSX.Element {
           title="Equipamento"
           description={`Patrimônio ${order.patrimony}`}
           icon={DesktopTower}
-          footer={order.when}
         />
         <CardDetails
           title="Descrição do problema"
           description={order.description}
-          icon={Clipboard}
+          icon={ClipboardText}
+          footer={`Registrado em ${order.when}`}
         />
         <CardDetails
           title="solução"
